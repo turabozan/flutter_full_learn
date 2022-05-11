@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TextLearnView extends StatelessWidget {
@@ -14,10 +15,7 @@ class TextLearnView extends StatelessWidget {
             ('Welcome $name ${name.length}'),
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: Theme.of(context).textTheme.headline5?.copyWith(
-                  color: ProjectColors.welcomeColor,
-                  decoration: TextDecoration.underline,
-                ),
+            style: ProjectStyles.welcomeStyle,
           ),
           Text('Deneme',
               style: Theme.of(context).textTheme.headline5?.copyWith(
