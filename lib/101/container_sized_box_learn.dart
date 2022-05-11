@@ -17,9 +17,8 @@ class ContainerSizedBoxLearn extends StatelessWidget {
             const SizedBox.shrink(),
             SizedBox.square(dimension: 50, child: Text('b' * 50)),
             Container(
-              height: 50,
               constraints: const BoxConstraints(
-                  maxWidth: 150, minWidth: 100, maxHeight: 100),
+                  maxWidth: 200, minWidth: 100, minHeight: 100, maxHeight: 200),
               child: Text('aa' * 2),
               padding: const EdgeInsets.all(10),
               margin: const EdgeInsets.all(10),
